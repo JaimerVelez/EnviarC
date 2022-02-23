@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviarC", "EnviarC\EnviarC.csproj", "{9994C733-E8F8-4503-A296-B3DD7E36A6F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelo", "Modelo", "{0244DC48-B824-47C1-96B7-D3566952CF82}"
+	ProjectSection(SolutionItems) = preProject
+		Beneficios.cs = Beneficios.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9994C733-E8F8-4503-A296-B3DD7E36A6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9994C733-E8F8-4503-A296-B3DD7E36A6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9994C733-E8F8-4503-A296-B3DD7E36A6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9994C733-E8F8-4503-A296-B3DD7E36A6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C44A2813-3715-41BB-B828-6621D05E4BE8}
+	EndGlobalSection
+EndGlobal
