@@ -95,7 +95,7 @@ namespace EnviarC
                 msg.From = new System.Net.Mail.MailAddress("" + Mail + "");
 
                 System.Net.Mail.SmtpClient cliente = new System.Net.Mail.SmtpClient();
-                cliente.Credentials = new System.Net.NetworkCredential("jaimervelezlol@gmail.com", "Nunca lo sabras");
+                cliente.Credentials = new System.Net.NetworkCredential("jaimer", "");
 
                 cliente.Port = 587;
                 cliente.EnableSsl = true;
@@ -113,46 +113,4 @@ namespace EnviarC
 
 
 
-
-        public class DP_Beneficios : IDisposable
-        {
-            public  List<Beneficios> Buscarbeneficios()
-            {
-                List<Beneficios> beneficios;
-
-                using (SqlConnection con = new SqlConnection(Conexion.Cadena2()))
-                {
-                    string query = @"SELECT * FROM Archica_Productos_Especiales as ape " +
-                                    "where " +
-                                    "ape.Estado=1";
-                    beneficios = con.Query<Beneficios>(query).ToList();
-                }
-                return beneficios;
-            }
-            public Beneficios BuscarBeneficioId(string IdBeneficio)
-            {
-                Beneficios beneficios;
-                using (SqlConnection con = new SqlConnection(Conexion.Cadena2()))
-                {
-                    string query = @"SELECT * FROM Correo as ape " +
-                                    "where " +
-                                    "ape.Estado=1 and Id=" + IdBeneficio + "";
-                    beneficios = con.Query<Beneficios>(query).FirstOrDefault();
-                }
-                return beneficios;
-            }
-            public void Dispose()
-            {
-
-            }
-        }
-    
-
-
-
-    private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
 }
